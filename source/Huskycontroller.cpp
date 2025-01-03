@@ -1,11 +1,6 @@
 //------------------------------------------------------------------------
 // Copyright(c) 2025 shiroyoru.
 //
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-//------------------------------------------------------------------------
-// Copyright(c) 2025 shiroyoru.
-//
 // This program is free software : you can redistribute it and /or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
