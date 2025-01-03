@@ -519,6 +519,40 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\VST_COMPATIBLE_LOGO.png">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating VST3/Debug/$(TargetFileName)/Contents/Resources/VST_COMPATIBLE_LOGO.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/VST_COMPATIBLE_LOGO.png C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/$(TargetFileName)/Contents/Resources/VST_COMPATIBLE_LOGO.png
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/VST_COMPATIBLE_LOGO.png to C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/$(TargetFileName)/Contents/Resources/VST_COMPATIBLE_LOGO.png"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\VST3\Debug\$(TargetFileName)\Contents\Resources\VST_COMPATIBLE_LOGO.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating VST3/Release/$(TargetFileName)/Contents/Resources/VST_COMPATIBLE_LOGO.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/VST_COMPATIBLE_LOGO.png C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/$(TargetFileName)/Contents/Resources/VST_COMPATIBLE_LOGO.png
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/VST_COMPATIBLE_LOGO.png to C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/$(TargetFileName)/Contents/Resources/VST_COMPATIBLE_LOGO.png"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\VST3\Release\$(TargetFileName)\Contents\Resources\VST_COMPATIBLE_LOGO.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
     <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\C403ADE2BC03549FB4EBD79D04B3B750_snapshot.png">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating VST3/Debug/$(TargetFileName)/Contents/Resources/Snapshots/C403ADE2BC03549FB4EBD79D04B3B750_snapshot.png</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal

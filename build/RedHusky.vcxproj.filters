@@ -75,6 +75,9 @@
     <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\Husky.png">
       <Filter>Resources</Filter>
     </CustomBuild>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\VST_COMPATIBLE_LOGO.png">
+      <Filter>Resources</Filter>
+    </CustomBuild>
     <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\C403ADE2BC03549FB4EBD79D04B3B750_snapshot.png">
       <Filter>Resources</Filter>
     </CustomBuild>

@@ -6,7 +6,7 @@
 				"path": "ADSR.png"
 			},
 			"C403ADE2BC03549FB4EBD79D04B3B750_snapshot": {
-				"path": "C403ADE2BC03549FB4EBD79D04B3B750_snapshot.png"
+				"path": "VST_COMPATIBLE_LOGO.png"
 			},
 			"keyAdjustAnimation": {
 				"path": "keyAdjustAnimation.png"
@@ -7500,6 +7500,7 @@
 							"text-inset": "0, 0",
 							"text-rotation": "0",
 							"text-shadow-offset": "1, 1",
+							"tooltip": "VST is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.",
 							"transparent": "false",
 							"value-precision": "2",
 							"wants-focus": "false",

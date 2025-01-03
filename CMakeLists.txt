@@ -63,6 +63,7 @@ if(SMTG_ENABLE_VSTGUI_SUPPORT)
             "resource/mainFq.png"
             "resource/Husky.png"
             "resource/Husky.png"
+            "resource/VST_COMPATIBLE_LOGO.png"
     )
 endif(SMTG_ENABLE_VSTGUI_SUPPORT)
 # -------------------
