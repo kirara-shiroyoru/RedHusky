@@ -1,0 +1,688 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FDC2374A-8404-3D65-9216-50AF9E4904A2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>RedHusky</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\VST3\Debug\RedHusky.vst3\Contents\x86_64-win\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RedHusky.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RedHusky</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.vst3</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <LocalDebuggerCommand Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProgramW6432)/Steinberg/VST3PluginTestHost/VST3PluginTestHost.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">--pluginfolder "$(OutDir)/"</LocalDebuggerCommandArguments>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\VST3\Release\RedHusky.vst3\Contents\x86_64-win\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RedHusky.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RedHusky</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.vst3</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <LocalDebuggerCommand Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProgramW6432)/Steinberg/VST3PluginTestHost/VST3PluginTestHost.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments Condition="'$(Configuration)|$(Platform)'=='Release|x64'">--pluginfolder "$(OutDir)/"</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\vst-sdk_3.7.10\my_plugins\RedHusky\build;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\vstgui4;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\base\..;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\..;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\pluginterfaces\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>6031;6308;6330;6385;6386;28125;28251;4221</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;SMTG_RENAME_ASSERT=1;DEVELOPMENT=1;_UNICODE;VSTGUI_LIVE_EDITING;VSTGUI_ENABLE_DEPRECATED_METHODS=1;SMTG_MODULE_IS_BUNDLE=1;CMAKE_INTDIR="Debug";RedHusky_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;SMTG_RENAME_ASSERT=1;DEVELOPMENT=1;_UNICODE;VSTGUI_LIVE_EDITING;VSTGUI_ENABLE_DEPRECATED_METHODS=1;SMTG_MODULE_IS_BUNDLE=1;CMAKE_INTDIR=\"Debug\";RedHusky_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\vst-sdk_3.7.10\my_plugins\RedHusky\build;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\vstgui4;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\base\..;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\..;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\pluginterfaces\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\vst-sdk_3.7.10\my_plugins\RedHusky\build;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\vstgui4;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\base\..;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\..;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\pluginterfaces\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/RedHusky.vst3/Contents/Resources
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>[SMTG] Copy PlugIn.ico and desktop.ini and change their attributes.			</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/vst-sdk_3.7.10/VST_SDK/vst3sdk/cmake/modules/../templates/VST_Logo_Steinberg.ico C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/RedHusky.vst3/PlugIn.ico
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/vst-sdk_3.7.10/VST_SDK/vst3sdk/cmake/modules/../templates/desktop.ini.in C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/RedHusky.vst3/desktop.ini
+if %errorlevel% neq 0 goto :cmEnd
+attrib +s C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/RedHusky.vst3/desktop.ini
+if %errorlevel% neq 0 goto :cmEnd
+attrib +s C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/RedHusky.vst3/PlugIn.ico
+if %errorlevel% neq 0 goto :cmEnd
+attrib +s C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/RedHusky.vst3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+cd C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\bin
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\bin\Debug\moduleinfotool.exe -create -version 1.0.0.0 -path C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/RedHusky.vst3 -output C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/RedHusky.vst3/Contents/Resources/moduleinfo.json
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+cd C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\bin
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo [SMTG] Validator started...
+if %errorlevel% neq 0 goto :cmEnd
+C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\bin\Debug\validator.exe C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/RedHusky.vst3/Contents/x86_64-win/RedHusky.vst3
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo [SMTG] Validator finished.
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo [SMTG] Delete previous link...
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -rf C:/Users/whatt/AppData/Local/Programs/Common/VST3/RedHusky.vst3
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo [SMTG] Creation of the new link...
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E create_symlink C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/RedHusky.vst3  C:/Users/whatt/AppData/Local/Programs/Common/VST3/RedHusky.vst3
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo [SMTG] Finished.
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Debug\vstgui_support.lib;lib\Debug\sdk.lib;lib\Debug\vstgui_uidescription.lib;lib\Debug\vstgui.lib;lib\Debug\sdk_common.lib;lib\Debug\base.lib;lib\Debug\pluginterfaces.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/lib/Debug/RedHusky.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/WIN_PDB64/Debug/RedHusky.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\vst-sdk_3.7.10\my_plugins\RedHusky\build;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\vstgui4;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\base\..;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\..;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\pluginterfaces\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>6031;6308;6330;6385;6386;28125;28251;4221</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SMTG_RENAME_ASSERT=1;RELEASE=1;_UNICODE;VSTGUI_ENABLE_DEPRECATED_METHODS=1;SMTG_MODULE_IS_BUNDLE=1;CMAKE_INTDIR="Release";RedHusky_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SMTG_RENAME_ASSERT=1;RELEASE=1;_UNICODE;VSTGUI_ENABLE_DEPRECATED_METHODS=1;SMTG_MODULE_IS_BUNDLE=1;CMAKE_INTDIR=\"Release\";RedHusky_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\vst-sdk_3.7.10\my_plugins\RedHusky\build;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\vstgui4;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\base\..;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\..;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\pluginterfaces\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\vst-sdk_3.7.10\my_plugins\RedHusky\build;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\vstgui4;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\base\..;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\..;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\pluginterfaces\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/RedHusky.vst3/Contents/Resources
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>[SMTG] Copy PlugIn.ico and desktop.ini and change their attributes.			</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/vst-sdk_3.7.10/VST_SDK/vst3sdk/cmake/modules/../templates/VST_Logo_Steinberg.ico C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/RedHusky.vst3/PlugIn.ico
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/vst-sdk_3.7.10/VST_SDK/vst3sdk/cmake/modules/../templates/desktop.ini.in C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/RedHusky.vst3/desktop.ini
+if %errorlevel% neq 0 goto :cmEnd
+attrib +s C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/RedHusky.vst3/desktop.ini
+if %errorlevel% neq 0 goto :cmEnd
+attrib +s C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/RedHusky.vst3/PlugIn.ico
+if %errorlevel% neq 0 goto :cmEnd
+attrib +s C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/RedHusky.vst3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+cd C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\bin
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\bin\Release\moduleinfotool.exe -create -version 1.0.0.0 -path C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/RedHusky.vst3 -output C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/RedHusky.vst3/Contents/Resources/moduleinfo.json
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+cd C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\bin
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo [SMTG] Validator started...
+if %errorlevel% neq 0 goto :cmEnd
+C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\bin\Release\validator.exe C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/RedHusky.vst3/Contents/x86_64-win/RedHusky.vst3
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo [SMTG] Validator finished.
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo [SMTG] Delete previous link...
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -rf C:/Users/whatt/AppData/Local/Programs/Common/VST3/RedHusky.vst3
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo [SMTG] Creation of the new link...
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E create_symlink  C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/RedHusky.vst3 C:/Users/whatt/AppData/Local/Programs/Common/VST3/RedHusky.vst3
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo [SMTG] Finished.
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Release\vstgui_support.lib;lib\Release\sdk.lib;lib\Release\vstgui_uidescription.lib;lib\Release\vstgui.lib;lib\Release\sdk_common.lib;lib\Release\base.lib;lib\Release\pluginterfaces.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/lib/Release/RedHusky.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/WIN_PDB64/Release/RedHusky.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\Huskyeditor.uidesc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating VST3/Debug/$(TargetFileName)/Contents/Resources/Huskyeditor.uidesc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/Huskyeditor.uidesc C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/$(TargetFileName)/Contents/Resources/Huskyeditor.uidesc
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/Huskyeditor.uidesc to C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/$(TargetFileName)/Contents/Resources/Huskyeditor.uidesc"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\VST3\Debug\$(TargetFileName)\Contents\Resources\Huskyeditor.uidesc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating VST3/Release/$(TargetFileName)/Contents/Resources/Huskyeditor.uidesc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/Huskyeditor.uidesc C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/$(TargetFileName)/Contents/Resources/Huskyeditor.uidesc
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/Huskyeditor.uidesc to C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/$(TargetFileName)/Contents/Resources/Huskyeditor.uidesc"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\VST3\Release\$(TargetFileName)\Contents\Resources\Huskyeditor.uidesc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\ADSR.png">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating VST3/Debug/$(TargetFileName)/Contents/Resources/ADSR.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/ADSR.png C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/$(TargetFileName)/Contents/Resources/ADSR.png
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/ADSR.png to C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/$(TargetFileName)/Contents/Resources/ADSR.png"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\VST3\Debug\$(TargetFileName)\Contents\Resources\ADSR.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating VST3/Release/$(TargetFileName)/Contents/Resources/ADSR.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/ADSR.png C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/$(TargetFileName)/Contents/Resources/ADSR.png
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/ADSR.png to C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/$(TargetFileName)/Contents/Resources/ADSR.png"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\VST3\Release\$(TargetFileName)\Contents\Resources\ADSR.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\keyAdjustAnimation.png">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating VST3/Debug/$(TargetFileName)/Contents/Resources/keyAdjustAnimation.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/keyAdjustAnimation.png C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/$(TargetFileName)/Contents/Resources/keyAdjustAnimation.png
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/keyAdjustAnimation.png to C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/$(TargetFileName)/Contents/Resources/keyAdjustAnimation.png"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\VST3\Debug\$(TargetFileName)\Contents\Resources\keyAdjustAnimation.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating VST3/Release/$(TargetFileName)/Contents/Resources/keyAdjustAnimation.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/keyAdjustAnimation.png C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/$(TargetFileName)/Contents/Resources/keyAdjustAnimation.png
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/keyAdjustAnimation.png to C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/$(TargetFileName)/Contents/Resources/keyAdjustAnimation.png"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\VST3\Release\$(TargetFileName)\Contents\Resources\keyAdjustAnimation.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\main.png">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating VST3/Debug/$(TargetFileName)/Contents/Resources/main.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/main.png C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/$(TargetFileName)/Contents/Resources/main.png
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/main.png to C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/$(TargetFileName)/Contents/Resources/main.png"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\VST3\Debug\$(TargetFileName)\Contents\Resources\main.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating VST3/Release/$(TargetFileName)/Contents/Resources/main.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/main.png C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/$(TargetFileName)/Contents/Resources/main.png
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/main.png to C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/$(TargetFileName)/Contents/Resources/main.png"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\VST3\Release\$(TargetFileName)\Contents\Resources\main.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\mainFq.png">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating VST3/Debug/$(TargetFileName)/Contents/Resources/mainFq.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/mainFq.png C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/$(TargetFileName)/Contents/Resources/mainFq.png
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/mainFq.png to C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/$(TargetFileName)/Contents/Resources/mainFq.png"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\VST3\Debug\$(TargetFileName)\Contents\Resources\mainFq.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating VST3/Release/$(TargetFileName)/Contents/Resources/mainFq.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/mainFq.png C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/$(TargetFileName)/Contents/Resources/mainFq.png
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/mainFq.png to C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/$(TargetFileName)/Contents/Resources/mainFq.png"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\VST3\Release\$(TargetFileName)\Contents\Resources\mainFq.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\Husky.png">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating VST3/Debug/$(TargetFileName)/Contents/Resources/Husky.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/Husky.png C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/$(TargetFileName)/Contents/Resources/Husky.png
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/Husky.png to C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/$(TargetFileName)/Contents/Resources/Husky.png"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\VST3\Debug\$(TargetFileName)\Contents\Resources\Husky.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating VST3/Release/$(TargetFileName)/Contents/Resources/Husky.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/Husky.png C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/$(TargetFileName)/Contents/Resources/Husky.png
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/Husky.png to C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/$(TargetFileName)/Contents/Resources/Husky.png"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\VST3\Release\$(TargetFileName)\Contents\Resources\Husky.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\C403ADE2BC03549FB4EBD79D04B3B750_snapshot.png">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating VST3/Debug/$(TargetFileName)/Contents/Resources/Snapshots/C403ADE2BC03549FB4EBD79D04B3B750_snapshot.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/C403ADE2BC03549FB4EBD79D04B3B750_snapshot.png C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/$(TargetFileName)/Contents/Resources/Snapshots/C403ADE2BC03549FB4EBD79D04B3B750_snapshot.png
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/C403ADE2BC03549FB4EBD79D04B3B750_snapshot.png to C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/$(TargetFileName)/Contents/Resources/Snapshots/C403ADE2BC03549FB4EBD79D04B3B750_snapshot.png"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\VST3\Debug\$(TargetFileName)\Contents\Resources\Snapshots\C403ADE2BC03549FB4EBD79D04B3B750_snapshot.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating VST3/Release/$(TargetFileName)/Contents/Resources/Snapshots/C403ADE2BC03549FB4EBD79D04B3B750_snapshot.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/C403ADE2BC03549FB4EBD79D04B3B750_snapshot.png C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/$(TargetFileName)/Contents/Resources/Snapshots/C403ADE2BC03549FB4EBD79D04B3B750_snapshot.png
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/C403ADE2BC03549FB4EBD79D04B3B750_snapshot.png to C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/$(TargetFileName)/Contents/Resources/Snapshots/C403ADE2BC03549FB4EBD79D04B3B750_snapshot.png"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\VST3\Release\$(TargetFileName)\Contents\Resources\Snapshots\C403ADE2BC03549FB4EBD79D04B3B750_snapshot.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\C403ADE2BC03549FB4EBD79D04B3B750_snapshot_2.0x.png">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating VST3/Debug/$(TargetFileName)/Contents/Resources/Snapshots/C403ADE2BC03549FB4EBD79D04B3B750_snapshot_2.0x.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/C403ADE2BC03549FB4EBD79D04B3B750_snapshot_2.0x.png C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/$(TargetFileName)/Contents/Resources/Snapshots/C403ADE2BC03549FB4EBD79D04B3B750_snapshot_2.0x.png
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/C403ADE2BC03549FB4EBD79D04B3B750_snapshot_2.0x.png to C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Debug/$(TargetFileName)/Contents/Resources/Snapshots/C403ADE2BC03549FB4EBD79D04B3B750_snapshot_2.0x.png"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\VST3\Debug\$(TargetFileName)\Contents\Resources\Snapshots\C403ADE2BC03549FB4EBD79D04B3B750_snapshot_2.0x.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating VST3/Release/$(TargetFileName)/Contents/Resources/Snapshots/C403ADE2BC03549FB4EBD79D04B3B750_snapshot_2.0x.png</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/C403ADE2BC03549FB4EBD79D04B3B750_snapshot_2.0x.png C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/$(TargetFileName)/Contents/Resources/Snapshots/C403ADE2BC03549FB4EBD79D04B3B750_snapshot_2.0x.png
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[SMTG] Copied C:/vst-sdk_3.7.10/my_plugins/RedHusky/resource/C403ADE2BC03549FB4EBD79D04B3B750_snapshot_2.0x.png to C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/VST3/Release/$(TargetFileName)/Contents/Resources/Snapshots/C403ADE2BC03549FB4EBD79D04B3B750_snapshot_2.0x.png"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\VST3\Release\$(TargetFileName)\Contents\Resources\Snapshots\C403ADE2BC03549FB4EBD79D04B3B750_snapshot_2.0x.png</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/vst-sdk_3.7.10/my_plugins/RedHusky/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/vst-sdk_3.7.10/my_plugins/RedHusky -BC:/vst-sdk_3.7.10/my_plugins/RedHusky/build --check-stamp-file C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\cmake\templates\projectversion.h.in;C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\CMakeFiles\3.28.1\CMakeCCompiler.cmake;C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\CMakeFiles\3.28.1\CMakeCXXCompiler.cmake;C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\CMakeFiles\3.28.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/vst-sdk_3.7.10/my_plugins/RedHusky/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/vst-sdk_3.7.10/my_plugins/RedHusky -BC:/vst-sdk_3.7.10/my_plugins/RedHusky/build --check-stamp-file C:/vst-sdk_3.7.10/my_plugins/RedHusky/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\cmake\templates\projectversion.h.in;C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\CMakeFiles\3.28.1\CMakeCCompiler.cmake;C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\CMakeFiles\3.28.1\CMakeCXXCompiler.cmake;C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\CMakeFiles\3.28.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\version.h" />
+    <ClInclude Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\Huskycids.h" />
+    <ClInclude Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\Huskyprocessor.h" />
+    <ClCompile Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\Huskyprocessor.cpp" />
+    <ClInclude Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\Huskycontroller.h" />
+    <ClCompile Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\Huskycontroller.cpp" />
+    <ClCompile Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\Huskyentry.cpp" />
+    <ClInclude Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\HuskyParams.h" />
+    <ClInclude Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\HuskySinging.h" />
+    <ClCompile Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\HuskySinging.cpp" />
+    <ClInclude Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\HuskyLearning.h" />
+    <ClCompile Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\HuskyLearning.cpp" />
+    <ClInclude Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\HuskyEditor.h" />
+    <ClInclude Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\HuskyIBStream.h" />
+    <ClCompile Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\HuskyIBStream.cpp" />
+    <ClInclude Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\tinyfiledialogs.h" />
+    <ClCompile Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\tinyfiledialogs.c" />
+    <ClCompile Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\main\dllmain.cpp" />
+    <ResourceCompile Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\win32resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\ZERO_CHECK.vcxproj">
+      <Project>{9E831A84-B6F6-3115-87F2-7166CA362DB6}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\vst3sdk\base\base.vcxproj">
+      <Project>{38F367DE-3F01-313C-8AAF-E9F591CBCAFF}</Project>
+      <Name>base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\vst3sdk\public.sdk\samples\vst-utilities\moduleinfotool\moduleinfotool.vcxproj">
+      <Project>{D782A95E-59BE-39F5-B0C9-1DBE3D2632AF}</Project>
+      <Name>moduleinfotool</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\vst3sdk\pluginterfaces\pluginterfaces.vcxproj">
+      <Project>{CD258D5A-3B53-34EE-AB9D-8EDB214B722C}</Project>
+      <Name>pluginterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\vst3sdk\public.sdk\sdk.vcxproj">
+      <Project>{FD3F13D0-98D0-369E-BFD7-5BA7AE231BE8}</Project>
+      <Name>sdk</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\vst3sdk\public.sdk\sdk_common.vcxproj">
+      <Project>{95033303-B32D-3C84-A9C3-4EBEBDE89A22}</Project>
+      <Name>sdk_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\vst3sdk\public.sdk\samples\vst-hosting\validator\validator.vcxproj">
+      <Project>{19DF0FE6-B5D0-35F3-96B9-69E1029FBC89}</Project>
+      <Name>validator</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\vst3sdk\VSTGUI.build\vstgui\lib\vstgui.vcxproj">
+      <Project>{CA17B378-D98F-31B1-877C-BF79CAF60672}</Project>
+      <Name>vstgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\vst3sdk\vstgui_support.vcxproj">
+      <Project>{FA3DF23D-A35C-3915-98E1-8C4CA4C3FBD3}</Project>
+      <Name>vstgui_support</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\vst3sdk\VSTGUI.build\vstgui\uidescription\vstgui_uidescription.vcxproj">
+      <Project>{CEB0FE64-B104-372F-866C-F31E15E98175}</Project>
+      <Name>vstgui_uidescription</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

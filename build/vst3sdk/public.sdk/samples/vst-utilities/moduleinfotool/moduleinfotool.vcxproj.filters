@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\samples\vst-utilities\moduleinfotool\source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\vst\moduleinfo\moduleinfocreator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\vst\moduleinfo\moduleinfoparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\vst\hosting\module_win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\vst\moduleinfo\json.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\vst\moduleinfo\jsoncxx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\vst\moduleinfo\moduleinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\vst\moduleinfo\moduleinfocreator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\vst\moduleinfo\moduleinfoparser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\samples\vst-utilities\moduleinfotool\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{76A8CDAB-8C92-30BF-89D5-4894FED94C8B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{906BC450-1C3C-31FD-A526-35E51F225FB4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

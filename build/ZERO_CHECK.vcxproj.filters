@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\build\CMakeFiles\a02c087ea95927d6734079d14a80eafe\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4E79491B-8C7D-32BB-98BD-AF6C2F7688E1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

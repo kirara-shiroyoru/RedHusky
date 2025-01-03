@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\Huskyprocessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\Huskycontroller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\Huskyentry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\HuskySinging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\HuskyLearning.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\HuskyIBStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\tinyfiledialogs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\main\dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\Huskycids.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\Huskyprocessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\Huskycontroller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\HuskyParams.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\HuskySinging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\HuskyLearning.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\HuskyEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\HuskyIBStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\source\tinyfiledialogs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\Huskyeditor.uidesc" />
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\ADSR.png">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\keyAdjustAnimation.png">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\main.png">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\mainFq.png">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\Husky.png">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\C403ADE2BC03549FB4EBD79D04B3B750_snapshot.png">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\C403ADE2BC03549FB4EBD79D04B3B750_snapshot_2.0x.png">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\vst-sdk_3.7.10\my_plugins\RedHusky\resource\win32resource.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{76A8CDAB-8C92-30BF-89D5-4894FED94C8B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{13F056F2-36E8-3831-A127-0C0C08FD3C16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{906BC450-1C3C-31FD-A526-35E51F225FB4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

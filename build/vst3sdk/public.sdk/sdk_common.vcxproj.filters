@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\common\commoniids.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\common\openurl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\common\systemclipboard_linux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\common\systemclipboard_win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\common\threadchecker_linux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\common\threadchecker_win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\common\readfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\vst\vstpresetfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\common\openurl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\common\systemclipboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\common\threadchecker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\common\readfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\source\vst\vstpresetfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\vst-sdk_3.7.10\VST_SDK\vst3sdk\public.sdk\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{76A8CDAB-8C92-30BF-89D5-4894FED94C8B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{906BC450-1C3C-31FD-A526-35E51F225FB4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
