@@ -5,6 +5,9 @@
 			"ADSR": {
 				"path": "ADSR.png"
 			},
+			"C403ADE2BC03549FB4EBD79D04B3B750_snapshot": {
+				"path": "C403ADE2BC03549FB4EBD79D04B3B750_snapshot.png"
+			},
 			"keyAdjustAnimation": {
 				"path": "keyAdjustAnimation.png"
 			},
@@ -188,7 +191,7 @@
 		"custom": {
 			"FocusDrawing": {},
 			"VST3Editor": {
-				"Path": "C:\\Users\\whatt\\Desktop\\Huskyeditor.uidesc"
+				"Path": "C:\\vst-sdk_3.7.10\\my_plugins\\RedHusky\\resource\\Huskyeditor.uidesc"
 			},
 			"UIGridController": {
 				"Grids": "1x 1,5x 5,10x 10,12x 12,15x 15",
@@ -201,8 +204,8 @@
 				"SplitViewSize_0_1": "0.2320675105485232037061393839394440874457",
 				"SplitViewSize_1_0": "0.4683544303797468333350195734965382143855",
 				"SplitViewSize_1_1": "0.5210970464135020741025527968304231762886",
-				"SplitViewSize_2_0": "0.532000000000000028421709430404007434845",
-				"SplitViewSize_2_1": "0.4580000000000000182076576038525672629476",
+				"SplitViewSize_2_0": "0.5687999999999999722888333053560927510262",
+				"SplitViewSize_2_1": "0.4212000000000000188293824976426549255848",
 				"TabSwitchValue": "0",
 				"Version": "1"
 			},
@@ -211,19 +214,22 @@
 			},
 			"UIAttributesController": {},
 			"UIViewCreatorDataSource": {
-				"SelectedRow": "0"
+				"SelectedRow": "9"
 			},
 			"UITagsDataSource": {
 				"SelectedRow": "63"
 			},
 			"UIBitmapsDataSource": {
-				"SelectedRow": "4"
+				"SelectedRow": "1"
 			},
 			"UIFontsDataSource": {
 				"SelectedRow": "4"
 			},
 			"UIGradientsDataSource": {
 				"SelectedRow": "1"
+			},
+			"UIColorsDataSource": {
+				"SelectedRow": "-1"
 			}
 		},
 		"templates": {
@@ -7397,7 +7403,7 @@
 							"tooltip": "a coder and an amateur composer.",
 							"transparent": "false",
 							"value-precision": "2",
-							"wants-focus": "false",
+							"wants-focus": "true",
 							"wheel-inc-value": "0.1"
 						}
 					},
@@ -7460,6 +7466,43 @@
 							"tooltip": "save current state as a preset in \"*.redhusky\" file.",
 							"transparent": "false",
 							"wants-focus": "true",
+							"wheel-inc-value": "0.1"
+						}
+					},
+					"CTextLabel": {
+						"attributes": {
+							"back-color": "~ BlackCColor",
+							"background-offset": "0, 0",
+							"bitmap": "C403ADE2BC03549FB4EBD79D04B3B750_snapshot",
+							"class": "CTextLabel",
+							"default-value": "0.5",
+							"font": "~ NormalFont",
+							"font-antialias": "true",
+							"font-color": "~ WhiteCColor",
+							"frame-color": "~ BlackCColor",
+							"frame-width": "1",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "10, 10",
+							"round-rect-radius": "6",
+							"shadow-color": "~ RedCColor",
+							"size": "235, 150",
+							"style-3D-in": "false",
+							"style-3D-out": "false",
+							"style-no-draw": "false",
+							"style-no-frame": "false",
+							"style-no-text": "false",
+							"style-round-rect": "false",
+							"style-shadow-text": "false",
+							"text-alignment": "center",
+							"text-inset": "0, 0",
+							"text-rotation": "0",
+							"text-shadow-offset": "1, 1",
+							"transparent": "false",
+							"value-precision": "2",
+							"wants-focus": "false",
 							"wheel-inc-value": "0.1"
 						}
 					}
