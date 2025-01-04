@@ -1,8 +1,8 @@
 # RedHusky
 
-This is a VST®3 plugin that act as both instrument and sound analyzer<br>
+This is a VST®3 plugin that act as both instrument and sound analyzer. You can compile one with this project or directly download the RedHusky.vst.zip file.
 
-這是一個能拿來分析聲音，然後將分析結果當成樂器音色使用的VST3插件
+這是一個能拿來分析聲音，然後將分析結果當成樂器音色使用的VST3插件，你可以自己用這份代碼建一個或直接下載RedHusky.vst.zip
 
 ![VST is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.](https://github.com/kirara-shiroyoru/RedHusky/blob/master/resource/VST_COMPATIBLE_LOGO.png)
 
@@ -20,31 +20,13 @@ You
 **must not remove VST compatible logo in the modified version unless you remove the sdk used in the project, according to the guideline of the sdk**
 https://steinbergmedia.github.io/vst3_dev_portal/pages/VST+3+Licensing/Usage+guidelines.html
 
-# License
+**Artwork ("Husky.png" and "main.png") is not part of the project and may only be redistributed with the unmodified version of the plugin or project.**
 
-
-**remove all artworks used in the project**
-
-You are free to modify this project and distribute modified versions under the terms of the GPL-3.0. However, if you make modifications to this software and redistribute it, you **must rename the project** and **remove references to the original project name** 
-
-This program is free software : you can redistribute it and /or modify<br>
-it under the terms of the GNU General Public License as published by<br>
-the Free Software Foundation, either version 3 of the License, or<br>
-(at your option) any later version.<br>
-You should have received a copy of the GNU General Public License<br>
-along with this program.If not, see https://www.gnu.org/licenses/ .<br>
-IMAGES INCLUDING "Husky.png" AND "main.png" ARE NOT A PART OF<br>
-PROGRAM AND ARE NOT LICENSED UNDER GNU General Public License.<br>
-YOU MAY ONLY USE THEM IF INCLUDED IN THIS PLUGIN OR PROJECT,<br>
-OR OTHERWISE PEMITTED BY ME<br>
-<br>
-這是一個GLP3授權的免費軟體，如果你在license找不到具體條文，就去<br>
-https://www.gnu.org/licenses/ 找。<br>
-然後裡面的哈士奇跟鋼琴圖片並沒有GPL3授權，如果你不是用在這個VST3，<br>
-請取得我的同意，或至少別公開用到被我知道。
 # Guide Line
-Husky assumption:<br>
-All sound on the world can be decomposed into superposition<br>
-of 16 harmonics and independent ADSRs.<br>
-<br>
-Click Husky to change <br>
+
+## Husky assumption:
+All sound on the world can be decomposed into superposition of 16 harmonics with independent ADSRs and volume. Husky sings and learn according to this assumption.
+
+When Husky sings, Husky sings according to the volume (relative, from 0 to 100), attack (ms, from 0 to 10000), decay (ms, from 0 to 10000), sustain (percentage volume of that harmonic, from 0 to 100), and release(ms, from 0 to 10000)
+
+When Husky learns, Husky fit the input to this model, and 
