@@ -1,7 +1,32 @@
 # RedHusky
-This is a vst3 plugin that act as both instrument and sound analyzer<br>
-這是一個能拿來分析聲音，然後將分析結果當成樂器音色使用的VST3
+
+This is a VST®3 plugin that act as both instrument and sound analyzer<br>
+
+這是一個能拿來分析聲音，然後將分析結果當成樂器音色使用的VST3插件
+
+![VST is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.](https://github.com/kirara-shiroyoru/RedHusky/blob/master/resource/VST_COMPATIBLE_LOGO.png)
+
+VST is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
+
+# Redistribution Policy:
+
+You are free to modify this project and redistribute the modified versions under the terms of the GLP-3.0. However, if you make modifications to this software and redistribute it, you 
+**must rename the project**
+and
+**remove references to the original project name**
+including but not limited to name, logo, branding to avoid confusion with the original work.
+
+You
+**must not remove VST compatible logo in the modified version unless you remove the sdk used in the project, according to the guideline of the sdk**
+https://steinbergmedia.github.io/vst3_dev_portal/pages/VST+3+Licensing/Usage+guidelines.html
+
 # License
+
+
+**remove all artworks used in the project**
+
+You are free to modify this project and distribute modified versions under the terms of the GPL-3.0. However, if you make modifications to this software and redistribute it, you **must rename the project** and **remove references to the original project name** 
+
 This program is free software : you can redistribute it and /or modify<br>
 it under the terms of the GNU General Public License as published by<br>
 the Free Software Foundation, either version 3 of the License, or<br>
