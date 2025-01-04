@@ -12,7 +12,7 @@ This is a VST®3 plugin that act as both instrument and sound analyzer. You can 
 
 VST is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
 
-# Redistribution Policy:
+# Redistribution Policy
 
 You are free to modify this project and redistribute the modified versions under the terms of the GLP-3.0. However, if you make modifications to this software and redistribute it, you 
 **must rename the project**
@@ -29,23 +29,23 @@ You
 
 # User Guide Line
 
-## Husky's Assumption:
+## Husky's Assumption
 
 All timbre of sound on the world can be decomposed into superposition of 16 harmonics with independent ADSRs and volume. Husky sings and learns according to this assumption. There is no guarentee that the real world sound is anything close to this assumption, and so is the result of singing and learning.
 
-## What Husky Can Do:
+## What Husky Can Do
 
 You can simply click Husky in the Red Husky plugin to tell Husky which task to do.
 
-### Singing:
+### Singing
 
 When Husky sings, Husky sings according to the [timbre information](#timbre-information), [frequncy information](#frequency-information) and midi.
 
-### Learning:
+### Learning
 
 When Husky learns, Husky fits the input to Husky's Assumption, and cap the loudest harmonic at 100, according to sound input(only according to the left channel), [main frequency](#main-frequency) and midi. Make sure you give Husky the midi information otherwise Husky simply ignore all the sound inputs.
 
-## Parameters:
+## Parameters
 
 ### Timbre Information:
 
@@ -73,7 +73,7 @@ In Hz, from 1 to 22000, representing the A4 note frequency. Automating the timbr
 
 You can tune the each key any way you like, with value from 1 to 2. All keys are defaulted at 12 equal temperament. Automating the timbre when playing a midi note **DOES NOT** affect the up coming sound produced, since frequency information in a single note is relative frequency based rather than pitch based.
 
-## Presets:
+## Presets
 
 You can save and load a preset in form of .redhusky file. 
 
@@ -92,11 +92,11 @@ File format that is used in this Red Husky plugin: should only be in length of e
 
 ## Bug
 
-### Existing:
+### Existing
 
 1. After loading a .redhusky file, you have to reopen the UI to see the value change of all parameters.
 
-### Already Worked Around
+### Already Worked Around:
 
 1. Processor is informed several times when load or save tag is called.
 2. load and save tag is touched when opening up the UI interface. This bug still exists if you are using a debug mode Red Husky plugin and using the sdk that I had used to to create the UI, resulting in a single pop up dialog. 
