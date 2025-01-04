@@ -25,7 +25,7 @@ You
 
 **Artwork ("Husky.png" and "main.png") is not part of the project and may only be redistributed with either following condition met:**
 1. in a **original** plugin or project.
-2. otherwise permitted by me, [you can contact me in the email below](#contact-me).
+2. otherwise permitted by me, [you can contact me with the email above](#contact-me).
 
 # User Guide Line
 
