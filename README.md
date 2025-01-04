@@ -88,7 +88,7 @@ Press Load button to open and load a existing .redhuskyfile. The dialog that pop
 
 ### .redhusky
 
-File format that is used in this Red Husky plugin: should only be in length of exactly 376 bytes, saving 94 floats in the file. **Any file with the wrong file extension or length cannot be read by the Red Husky plugin.
+File format that is used in this Red Husky plugin: should only be in length of exactly 376 bytes, saving 94 floats in the file. **Any file with the wrong file extension or length cannot be read by the Red Husky plugin.**
 
 ## Bug
 
