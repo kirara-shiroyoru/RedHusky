@@ -1,6 +1,6 @@
-# RedHusky
+# Red Husky
 
-This is a VST®3 plugin that act as both instrument and sound analyzer. You can compile one with this project or directly download the RedHusky.vst.zip file. There is a [UI bug](#bug) that I cannot fix but would not affect using the plugin. I would be glad if anyone would tell me how to fix it. I would also be happy to recieve any .redhusky file as a result of analyzing sound with this plugin.
+This is a VST®3 plugin that act as both instrument and sound analyzer. You can compile one with this project or directly download the RedHusky.vst.zip file. There is a [UI bug](#bug) that I cannot fix but would not affect using the plugin. I would be glad if anyone would tell me how to fix it. I would also be happy to recieve any .redhusky file as a result of analyzing sound with this Red Husky plugin.
 
 這是一個能拿來分析聲音，然後將分析結果當成樂器音色使用的VST3插件，你可以自己用這份代碼建一個或直接下載RedHusky.vst.zip。然後這個插件有[UI bug](#bug)，但不至於影響使用。如果有人能告訴我該怎麼修理這個bug我會很感激的。然後如果有人分析完自己有的sample之後得到什麼有趣的.redhusky檔案願意分享給我我也會很高興。
 
@@ -20,26 +20,69 @@ You
 **must not remove VST compatible logo in the modified version unless you remove the sdk used in the project, according to the guideline of the sdk**
 https://steinbergmedia.github.io/vst3_dev_portal/pages/VST+3+Licensing/Usage+guidelines.html
 
-**Artwork ("Husky.png" and "main.png") is not part of the project and may only be redistributed with the unmodified version of the plugin or project.**
+**Artwork ("Husky.png" and "main.png") is not part of the project and may only be redistributed with the unmodified version of the Red Husky plugin or project.**
 
 # User Guide Line
 
 ## Husky's Assumption:
 
-All sound on the world can be decomposed into superposition of 16 harmonics with independent ADSRs and volume. Husky sings and learn according to this assumption. 
-
-There is no guarentee that the real world sound is anything close to the model, and so is the result of singing and learning.
+All timbre of sound on the world can be decomposed into superposition of 16 harmonics with independent ADSRs and volume. Husky sings and learns according to this assumption. There is no guarentee that the real world sound is anything close to this assumption, and so is the result of singing and learning.
 
 ## What Husky Can Do:
 
-You can simply click Husky in the plugin to tell Husky which task to do.
+You can simply click Husky in the Red Husky plugin to tell Husky which task to do.
 
 ### Singing:
 
-When Husky sings, Husky sings according to the volume (relative, from 0 to 100), attack (ms, from 0 to 10000), decay (ms, from 0 to 10000), sustain (percentage volume of that harmonic, from 0 to 100), and release(ms, from 0 to 10000)
+When Husky sings, Husky sings according to the [timbre information](#timbre-information), [frequncy information](#frequency-information) and midi.
 
 ### Learning:
 
-When Husky learns, Husky fits the input to this model, and cap the loudest harmonic at 100. Note that both sound and midi is required for the plugin to analyze the sound. The plugin state has to be saved to see the learning result, and the Husky's task should automatically change back to Singing.
+When Husky learns, Husky fits the input to Husky's Assumption, and cap the loudest harmonic at 100, according to sound input(only according to the left channel), [main frequency](#main-frequency) and midi. Make sure you give Husky the midi information otherwise Husky simply ignore all the sound inputs.
+
+## Parameters:
+
+### Timbre Information:
+
+Automating the timbre when playing a midi note **does** affect the up coming sound produced. 
+
+#### volume
+
+Relative, from 0 to 100. Each harmonic has its own volume.
+
+#### attack, deacay, release
+
+In miliseconds, from 0 to 10000. Each harmonic has its own attack, decay and release.
+
+#### sustain
+
+Percentage of volume parameter, from 1 to 100. Each harmonic has its own sustain.
+
+### Frequency Information:
+
+#### main frequency
+
+In Hz, from 1 to 22000, representing the A4 note frequency. Automating the timbre when playing a midi note **does** affect the up coming sound produced. 
+
+#### tuning
+
+You can tune the each key any way you like, with value from 1 to 2. All keys are defaulted at 12 equal temperament. Automating the timbre when playing a midi note **does not** affect the up coming sound produced, since frequency information in a single note is relative frequency based rather than pitch based.
+
+## Presets:
+
+You can save and load a preset in form of .redhusky file. 
+
+### Save
+
+Press Save button to save the current state of Red Husky plugin to a preset file. **This button does not save the plugin state in the host**.
+
+### Load
+
+Press Load button to open and load a existing .redhuskyfile. The dialog pops up when loading a file is based on [tinyfiledialogs](https://github.com/native-toolkit/libtinyfiledialogs), including tinyfiledialogs.h and tinyfiledialogs.c, and is not part of my work.
+
+### .redhusky
+
+File format that is used in this Red Husky plugin: should only be in length of exactly 376 bytes, saving 94 floats in the file. **Any file with the wrong file extension or length cannot be read by the Red Husky plugin.
 
 ## Bug
+1. After loading a .redhusky file, you have to reopen the UI to see the value change of all parameters.
