@@ -95,6 +95,7 @@ File format that is used in this Red Husky plugin: should only be in length of e
 ### Existing
 
 1. After loading a .redhusky file, you have to reopen the UI to see the value change of all parameters.
+2. Husky Learn does not deal with notes that are too short due to settings of step and will cause some unexpected behaviors. This bug will be fixed in the later version.
 
 ### Already Worked Around:
 
