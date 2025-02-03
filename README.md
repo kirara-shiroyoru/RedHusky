@@ -29,6 +29,14 @@ You
 
 # User Guide Line
 
+![](https://github.com/kirara-shiroyoru/RedHusky/blob/master/document%20image.png)
+
+1. Husky
+2. volume, attack, decay, sustain, release
+3. main frequency
+4. key tuning
+5. save and load .redhusky file
+
 ## Husky's Assumption
 
 All timbre of sound on the world can be decomposed into superposition of 16 harmonics with independent ADSRs and volume. Husky sings and learns according to this assumption. There is no guarentee that the real world sound is anything close to this assumption, and so is the result of singing and learning.
